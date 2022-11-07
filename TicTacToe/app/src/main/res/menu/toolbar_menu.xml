@@ -10,7 +10,7 @@
     <item
         android:id="@+id/backgroud_color"
         android:icon="@drawable/ic_menu"
-        android:title="Night mode"
+        android:title="Change background color"
         app:showAsAction = "never"/>
 
 </menu>

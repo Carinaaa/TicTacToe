@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ColorPanelActivity"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        android:paddingBottom="100dp"
+        />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/red_slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stepSize="5"
+        android:value="20"
+        android:valueFrom="0"
+        android:valueTo="100"
+        app:haloColor="@color/dark_red"
+        app:thumbColor="@color/red"
+        app:trackColor="@color/dark_red"
+        android:paddingTop="100dp"/>
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/green_slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stepSize="5"
+        android:value="20"
+        android:valueFrom="0"
+        android:valueTo="100"
+        app:haloColor="@color/dark_green"
+        app:thumbColor="@color/green"
+        app:trackColor="@color/dark_green"
+        android:paddingBottom="150dp"/>
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/blue_slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stepSize="5"
+        android:value="20"
+        android:valueFrom="0"
+        android:valueTo="100"
+        app:haloColor="@color/dark_blue"
+        app:thumbColor="@color/blue"
+        app:trackColor="@color/dark_blue"
+        android:paddingBottom="150dp"/>
+
+    <Button
+        android:id="@+id/bt_keep_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/set_color"
+        android:backgroundTint="@color/silver"
+        android:textColor="@color/black"
+        />
+
+</LinearLayout>
